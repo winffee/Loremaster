@@ -1,5 +1,20 @@
-## Azure Conversational Language Understanding Client Library for Python(CLU):
-https://learn.microsoft.com/en-us/python/api/overview/azure/ai-language-conversations-readme?view=azure-python
+## Preparation:
+To run the Application, you will needs to register below Azure Services:
 
-## Speech SDK:
-https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/setup-platform?pivots=programming-language-python&tabs=windows%2Cubuntu%2Cdotnetcli%2Cdotnet%2Cjre%2Cmaven%2Cnodejs%2Cmac%2Cpypi
+- Form Recognizer Service
+- Content Safety Service
+- ContentModerator Service
+- Language Service
+- Speech Service
+
+And fill the Endpoints and key to settings_template.json and rename the json file to be settings.json.
+
+Python >= 3.7
+
+## Run the Application:
+
+### Install the required packages
+pip install -r requirements.txt
+
+### Run the app.py file:
+python run app.py
