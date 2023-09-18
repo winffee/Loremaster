@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is Loremaster prototype">
+    <meta name="author" content="Elvis Xia">
+    <title>Loremaster</title>
+    
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+    <!--JS Libraries-->
+    <script type='text/javascript' src="{{url_for('static',filename='js/jquery.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/speech.bundle-min.js')}}"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="bg-body-tertiary p-5 rounded mt-3">
+            <h2>Previewed Image</h2>
+            <video id="video" autoplay></video>
+        </div>
+        <div class="bg-body-tertiary p-5 rounded mt-3">
+            <img src="" id="img_preview" alt="Captured Image">
+            <canvas id="preview" style="display: none;"></canvas>
+        </div>
+        <div class="bg-body-tertiary p-5 rounded mt-3">
+            <div class="spinner-border text-success" id="spin-original" hidden role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div id="ori_text" style="width: 100%;" contenteditable></div>
+        </div>
+        <div class="bg-body-tertiary p-5 rounded mt-3">
+            <div class="spinner-border text-success" id="spin-assist" hidden role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div id="assist_text" style="width: 100%;" contenteditable></div>
+        </div>
+        <div class="bg-body-tertiary p-5 rounded mt-3">
+            <div class="spinner-border text-success" id="spin-analyze" hidden role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div id="analyze_text" style="width: 100%;" contenteditable></div>
+        </div>
+        <br/>
+        <br/>
+    </main>
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Loremaster</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="btn_listen" class="nav-link active" aria-current="page" href="#">Listen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="a_mode" aria-disabled="true">Accessibility</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btn_pause" aria-disabled="true">Stop Reading</a>
+                    </li>
+                    <!-- <li class="nav-item dropup">
+                        <a id="a_mode" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Mode</a>
+                        <ul id="ul_mode" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                            <li><a class="dropdown-item" href="#">Children</a></li>
+                        </ul>
+                    </li>  -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--JS User Scripts-->
+    <script type='text/javascript' src="{{url_for('static',filename='js/app.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/speech.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/synthesis.js')}}"></script>
+
+</body>
+
+</html>

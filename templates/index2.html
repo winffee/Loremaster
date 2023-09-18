@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LoreMaster</title>
+    <!--CSS Files-->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <!--JS Libraries-->
+    <script type='text/javascript' src="{{url_for('static',filename='js/jquery.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/speech.bundle-min.js')}}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <h1>Loremaster(Test)</h2>
+                <br />
+            </div>
+        </div>
+        <div class="row" style="text-align: left;">
+            <div class="col-6" >
+                <h2 id="head_voice">Voice:</h2>
+                <br />
+                
+            </div>
+            <div class="col-6">
+                <label>Speech Result:</label>
+                <div id="speechResult"></div>
+                <label>Intent Result:</label>
+                <div id="intentResult"></div>
+            </div>
+        </div>
+        <div class="row" style="text-align: left;">
+            <div class="col-6">
+                <button id="btn_record" type="button" class="btn btn-primary">Intent</button>&nbsp;
+                <button id="btn_chat" type="button" class="btn btn-primary">Chat</button>
+                <button id="btn_pause" type="button" class="btn btn-primary">Pause</button>&nbsp;
+                <button id="btn_resume" type="button" class="btn btn-primary">Resume</button>&nbsp;
+            </div>
+            <div class="col-6">
+                <!-- <button id="btn_speak" type="button" class="btn btn-primary">Start Speak</button> -->
+            </div>
+        </div>
+        <div class="row" style="text-align: left;">
+            <div class="col-6">
+                <h2>Previewed Image</h2>
+                <video id="video" autoplay></video>
+            </div>
+            <div class="col-6">
+                <h2>Captured Image</h2>
+                <img src="" id="img_preview" alt="Captured Image">
+                <canvas id="preview" style="display: none;"></canvas>
+            </div>
+        </div>
+        <div class="container text-center" style="text-align: left;">
+            <!-- <div class="row">
+                <div class="col">
+                    <button id="btn_capture" type="button" class="btn btn-primary">take picture</button>
+                </div>
+                <div class="col">
+                    <button id="btn_convert" class="btn btn-success">Convert Image To text</button>
+                </div>
+                <div class="col">
+                    <button id="btn_analyze" class="btn btn-success">Analyze Text</button>
+                </div>
+            </div> -->
+            <br />
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h2>Original Text:</h2>
+                </div>
+                <div class="col">
+                    <div class="spinner-border text-success" id="spin-original" hidden role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div id="ori_text" style="width: 100%;" contenteditable></div>
+                </div>
+            </div>
+            <br />
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h2>Assistant Response:</h2>
+                </div>
+                <div class="col">
+                    <div class="spinner-border text-success" id="spin-assist" hidden role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div id="assist_text" style="width: 100%;"></div>
+                </div>
+            </div>
+            <br/>
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h2>Refined Text:</h2>
+                </div>
+                <div class="col">
+                    <div class="spinner-border text-success" id="spin-refine" hidden role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div id="refined_text" style="width: 100%;"></div>
+                </div>
+            </div>
+            <br />
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h2>Summary:</h2>
+                </div>
+                <div class="col">
+                    <div class="spinner-border text-success" id="spin-summary" hidden role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div id="summary_text" style="width: 100%;"></div>
+                </div>
+            </div>
+            <br />
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h2>violence Severity:</h2>
+                </div>
+                <div class="col">
+                    <div class="spinner-border text-success" id="spin-severity" hidden role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div id="severity_text" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--JS User Scripts-->
+    <script type='text/javascript' src="{{url_for('static',filename='js/app.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/speech.js')}}"></script>
+    <script type='text/javascript' src="{{url_for('static',filename='js/synthesis.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+settings.json
+.venv
+.vscode
+__pycache__
+
+static/captured_image.jpg

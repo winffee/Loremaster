@@ -1,0 +1,65 @@
+<mxfile host="Electron" modified="2023-08-30T01:34:31.612Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="qhI2k_ciq_OFvw92u3bt" version="21.6.5" type="device">
+  <diagram name="Page-1" id="_fUSwFQkMpx2w2MFlSzn">
+    <mxGraphModel dx="1004" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48gyuwdRNGpqWUMDHeBZ-1" target="48gyuwdRNGpqWUMDHeBZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-1" value="Voice Input" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="48gyuwdRNGpqWUMDHeBZ-2" target="48gyuwdRNGpqWUMDHeBZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-19" value="Button Click" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="48gyuwdRNGpqWUMDHeBZ-7">
+          <mxGeometry x="-0.2472" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-2" value="UI Input" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48gyuwdRNGpqWUMDHeBZ-3" target="48gyuwdRNGpqWUMDHeBZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-3" value="Azure Speech-to-Text Service" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48gyuwdRNGpqWUMDHeBZ-5" target="48gyuwdRNGpqWUMDHeBZ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-12" value="Azure Document Intellisense&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="48gyuwdRNGpqWUMDHeBZ-11">
+          <mxGeometry x="-0.1439" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-5" value="Take a picture" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="280" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48gyuwdRNGpqWUMDHeBZ-10" target="48gyuwdRNGpqWUMDHeBZ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48gyuwdRNGpqWUMDHeBZ-10" target="48gyuwdRNGpqWUMDHeBZ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="48gyuwdRNGpqWUMDHeBZ-10" target="48gyuwdRNGpqWUMDHeBZ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-10" value="Text" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="280" width="115" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-13" value="Content Safety" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="687.5" y="115" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-15" value="Text To Speech" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="687.5" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="48gyuwdRNGpqWUMDHeBZ-17" value="Translation" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="882.5" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
